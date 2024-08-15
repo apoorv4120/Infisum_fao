@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Trade Map for NENA Countries</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <img id="logo" src="images/logo.png" alt="logo">
+            <div class="nav-item active">
+                <img src="images/product_analysis.png" alt="Product Analysis Icon" class="nav-icon">
+                <a href="index.html">Product Space Analysis</a>
+            </div>
+            <div class="nav-item">
+                <img src="images/market_analysis.png" alt="Market Analysis Icon" class="nav-icon">
+                <a href="market.html">Market Analysis</a>
+            </div>
+        </div>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <h1>Agricultural Trade Map for NENA Countries</h1>
+
+            <div class="row">
+                <!-- Map and Dropdowns Section -->
+                <div class="controls-map-section">
+                    <div class="dropdowns">
+                        <div class="dropdown">
+                            <label for="region">Region</label>
+                            <select id="region">
+                                <option value="all">All</option>
+                                <option value="mashreq">Mashreq</option>
+                                <option value="maghreb">Maghreb</option>
+                                <option value="gcc">GCC</option>
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <label for="country">Country</label>
+                            <select id="country">
+                                <option value="Algeria">Algeria</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Syria">Syria</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="Yemen">Yemen</option>
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <label for="product">Product</label>
+                            <select id="product">
+                                <option value="all">All</option>
+                                <option value="beverages">Beverages</option>
+                                <option value="cereals">Cereals</option>
+                                <option value="dairy">Cocoa</option>
+                                <option value="coffee-tea-spices">Coffee Tea & Spices</option>
+                                <option value="cotton">Dairy Products</option>
+                                <option value="fertilizers">Fertilizers</option>
+                                <option value="food-products">Food Products</option>
+                                <option value="food-residues">Food Residues</option>
+                                <option value="fruits-nuts">Forestry</option>
+                                <option value="fruits-nuts">Fruits & Nuts</option>
+                                <option value="hides-skin">Hides & Skin</option>
+                                <option value="lac-gums">Lac & Gums</option>
+                                <option value="meat">Live Animals</option>
+                                <option value="meat">Meat</option>
+                                <option value="milling-products">Milling Products</option>
+                                <option value="oil-seeds">Oil Seeds</option>
+                                <option value="other-meat-products">Other Meat Products</option>
+                                <option value="plant-based-fibres">Plant-based Fibres</option>
+                                <option value="sugars">Sugars</option>
+                                <option value="tobacco">Tobacco</option>
+                                <option value="vegetable-oil">Vegetable Oil</option>
+                                <option value="vegplaiting-material">Vegetables</option>
+                                <option value="VegFruitNuts_Prep">VegFruitNuts_Prep</option>
+                                <option value="vegplaiting-material">VegPlaiting Material</option>
+                            </select>
+                        </div>
+                        <button id="back-button">Back</button>
+                    </div>
+                    <div class="map">
+                        <img src="images/map-placeholder.png" alt="Map of Algeria">
+                    </div>
+                    <p><strong>Data Source:</strong> <a href="https://comtradeplus.un.org" target="_blank">UN COMTRADE</a><br><strong>Period of Analysis:</strong> 2017 - 2022
+                    </p>
+                    <div class="button-container">
+                        <a href="https://nenafoodsecurity.org/trademap/download.php?path=downloads/Download%20Data.xlsx" target="_blank" class="ddbtn">
+                            <img src="images/download_data.png" alt="Icon" class="download-button">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Product Ranking Section -->
+                <div class="product-ranking">
+                    <h3>Agri & Food Products Rankings</h3>
+                    <ol>
+                        <li>Sugars</li>
+                        <li>Hides & Skin</li>
+                        <li>Fruits & Nuts</li>
+                        <li>Vegetable Oil</li>
+                        <li>Oil Seeds</li>
+                        <li>Plant-based Fibres</li>
+                        <li>Food Products</li>
+                        <li>Tobacco</li>
+                        <li>Food Residues</li>
+                        <li>Fertilizers</li>
+                        <li>Milling Products</li>
+                        <li>Coffee Tea & Spices</li>
+                        <li>VegPlaiting Material</li>
+                        <li>Cereals</li>
+                        <li>Lac & Gums</li>
+                        <li>Other Meat Products</li>
+                        <li>Beverages</li>
+                    </ol>
+                </div>
+            </div>
+
+            <section class="product-demand-section">
+                <div class="dropdown">
+                    <label for="product-demand">Product Demand</label>
+                    <select id="product-demand">
+                        <option value="Growing">Growing</option>
+                        <option value="Stable">Not Growing</option>
+                    </select>
+                </div>
+            </section>
+
+            <div class="row">
+                <!-- Revealed Trade Advantage Section -->
+                <div class="advantage-section">
+                    <h3>Revealed Trade Advantage</h3>
+                    <div class="chart">
+                        <img src="images/rta-placeholder.png" alt="Revealed Trade Advantage Chart">
+                    </div>
+                </div>
+
+                <!-- Revealed Comparative Advantage Section -->
+                <div class="advantage-section">
+                    <h3>Revealed Comparative Advantage</h3>
+                    <div class="chart">
+                        <img src="images/rca-placeholder.png" alt="Revealed Comparative Advantage Chart">
+                    </div>
+                </div>
+            </div>
+            <h3>Disclaimer</h3>
+            <p class="disc">The boundaries and names shown and the designations used on these map(s) do not imply the expression of
+                any opinion whatsoever on the part of FAO concerning the legal status of any country, territory, city or
+                area or of its authorities, or concerning the delimitation of its frontiers and boundaries. Dashed lines
+                on maps represent approximate border lines for which there may not yet be full
+                agreement.<br><br><strong>Final boundary between the Sudan and South Sudan has not yet been
+                    determined.</strong></p>
+        </main>
+    </div>
+    <div class="desktop-view-message">
+        Switch to Desktop View
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Contact us</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Data protection and privacy</a>
+            <a href="#">Scam Alert</a>
+            <a href="#">Report Misconduct</a>
+        </div>
+        <p>© FAO 2023</p>
+    </footer>
+    <script src="scripts.js"></script>
+    
+</body>
+
+</html>
